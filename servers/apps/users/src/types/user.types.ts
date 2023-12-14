@@ -30,8 +30,14 @@ export class ActivationResponse {
 
 @ObjectType()
 export class LoginResponse {
-  @Field()
+  @Field(() => User)
   user: User;
+
+  @Field()
+  accessToken: string;
+
+  @Field()
+  refreshToken: string;
 
   @Field(() => ErrorType, { nullable: true })
   error?: ErrorType;
