@@ -1,10 +1,18 @@
 import React from "react";
-import { Avatar } from "@nextui-org/avatar";
+
+import styles from "@/src/utils/style";
+import NavItems from "../NavItems";
+import ProfileDropdown from "../ProfileDropdown";
 
 const Header = () => {
 	return (
-		<header>
-			<Avatar src='https://i.pravatar.cc/150?u=a042581f4e29026024d' />
+		<header className="w-full bg-[#fefae0] p-2">
+			<div className="w-[90%] m-auto flex items-center justify-between">
+				<h1 className={`${styles.logo} text-black font-bold text-large md:text-2xl`}>Fishta-oh</h1>
+				<NavItems />
+
+				<ProfileDropdown />
+			</div>
 		</header>
 	);
 };
