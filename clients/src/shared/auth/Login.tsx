@@ -48,7 +48,7 @@ const Login = ({ setActiveState }: { setActiveState: (e: string) => void }) => {
 					{...register("email")}
 				/>
 				{errors.email && (
-					<span className="text-rose-500 block mt-1">{`${errors.email.message}`}</span>
+					<span className="text-rose-500 block mt-1 text-xs">{`${errors.email.message}`}</span>
 				)}
 
 				<div className="w-full mt-5 relative mb-1">
@@ -62,7 +62,7 @@ const Login = ({ setActiveState }: { setActiveState: (e: string) => void }) => {
 						{...register("password")}
 					/>
 					{errors.password && (
-						<span className="text-rose-500 block mt-1">{`${errors.password.message}`}</span>
+						<span className="text-rose-500 block mt-1 text-xs">{`${errors.password.message}`}</span>
 					)}
 
 					{!showPassword ? (
@@ -110,7 +110,7 @@ const Login = ({ setActiveState }: { setActiveState: (e: string) => void }) => {
 				<h5 className="text-center pt-4 font-Poppins text-xs text-black">
 					Don&apos;t have an account yet?{" "}
 					<span
-						className="text-[#ffc976] pl-1 cursor-pointer"
+						className="text-[#24a17c] font-semibold pl-1 cursor-pointer"
 						onClick={() => setActiveState("signup")}
 					>
 						Sign up
