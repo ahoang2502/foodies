@@ -31,10 +31,8 @@ const NavItems = ({ activeItem = 0 }: { activeItem?: number }) => {
 				<Link
 					href={item.url}
 					key={item.url}
-					className={`px-3 rounded-lg text-[14px] font-Poppins text-sm lg:text-[15px] font-medium lg:px-4 ${
-						activeItem === index
-							? "font-semibold text-white bg-[#bc6c25]"
-							: "text-black"
+					className={`px-3 rounded-lg text-[14px] font-Poppins text-sm lg:text-[15px] text-black font-medium lg:px-4 ${
+						activeItem === index && "font-semibold bg-[#ffc060]"
 					}`}
 				>
 					{item.title}

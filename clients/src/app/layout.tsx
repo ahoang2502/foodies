@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
+import { DM_Sans } from "next/font/google";
 
 import "./globals.css";
 import Providers from "./providers/NextUiProvider";
 
-const poppins = Poppins({
+const dm_Sans = DM_Sans({
 	weight: ["400", "500", "600", "700"],
 	subsets: ["latin"],
 	variable: "--font-Poppins",
@@ -22,7 +22,7 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang="en">
-			<body className={`${poppins.className}`}>
+			<body className={`${dm_Sans.className}`}>
 				<Providers>{children}</Providers>
 			</body>
 		</html>
